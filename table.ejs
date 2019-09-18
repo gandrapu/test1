@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+</head>
+<body>
+    <table border="1">
+        <thread>
+            <th>Sr. No.</th>]
+            <th>User Name</th>
+            <th>Age</th>
+            <th>ID</th>
+            <th>Email ID</th>
+            <th>Password</th>
+        </thread>
+        <tbody>
+            <% for(let i=0;i<data.length;i++) {%>}
+                <tr>
+                        <td><%=i%></td>
+                        <td><%=data[i].name</td>
+                        <td><%=data[i].age</td>
+                        <td><%=data[i].id</td>
+                        <td><%=data[i].email</td>
+                        <td><%=data[i].password</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>
